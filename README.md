@@ -1,3 +1,3 @@
 # Check-Pueyos-Prediction
-Will Tomas Pueyo's model prediction come true?
+Will Tomas Pueyo's model prediction come true?<br>
 Open pueyo.ipynb for details...
