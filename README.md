@@ -1,2 +1,3 @@
 # Check-Pueyos-Prediction
-Will Tomas Pueyo's model prediction come true?
+Will [Tomas Pueyo's Model Prediction](https://twitter.com/tomaspueyo/status/1276464644429766672) come true?<br>
+Open the *pueyo.ipynb* Jupyter notebook for details...
