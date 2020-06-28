@@ -1,3 +1,3 @@
-# Check-Pueyos-Prediction
+# Check-Pueyos-Projection
 Will [Tomas Pueyo's model projection](https://twitter.com/tomaspueyo/status/1276464644429766672) come true?<br>
 Open the *pueyo.ipynb* Jupyter notebook for details...
