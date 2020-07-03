@@ -37,12 +37,12 @@ df_global = pd.read_csv(
      'time_series_covid19_confirmed_global.csv'))
 df_global = df_global.drop(columns=['Province/State','Lat', 'Long'])
 df_global = df_global.groupby('Country/Region').agg('sum')
-# Add row for EU+UK totals
+# Add row for EU totals
 eu = ['Austria',  'Belgium', 'Bulgaria',  'Croatia',    'Cyprus', 'Czechia',     'Denmark', 
       'Estonia',  'Finland', 'France',    'Germany',    'Greece', 'Hungary',     'Ireland', 
       'Italy',    'Latvia',  'Lithuania', 'Luxembourg', 'Malta',  'Netherlands', 'Poland', 
-      'Portugal', 'Romania', 'Slovakia',  'Slovenia',   'Spain',  'Sweden',      'United Kingdom']
-df_global.loc['EU+UK',:] = df_global.loc[eu].sum()
+      'Portugal', 'Romania', 'Slovakia',  'Slovenia',   'Spain',  'Sweden']
+df_global.loc['EU',:] = df_global.loc[eu].sum()
 
 # Load US data so we can look at the four most populous states
 df_us = pd.read_csv(
@@ -56,7 +56,7 @@ df_us = df_us.groupby('Province_State').agg('sum')
 # Add row for US total (not needed or used)
 df_us.loc['United States',:] = df_us.sum(axis=0)
 
-countries = ['EU+UK', 'US']
+countries = ['EU', 'US']
 print(df_global.diff(axis=1).loc[countries].iloc[:,-7:])
 print('')
 
